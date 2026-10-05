@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Peserta</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 15px; }
+        nav { background-color: #333; padding: 10px; border-radius: 5px; margin-bottom: 20px;}
+        nav a { color: white; text-decoration: none; margin-right: 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #333; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Sederhana -->
+    <nav>
+        <a href="formulirPendaftaran.html">Formulir Pendaftaran</a>
+        <a href="tabelPeserta.html">Tabel Peserta</a>
+    </nav>
+
+    <h2>Daftar Peserta Pendaftaran</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nomor</th>
+                <th>Nama</th>
+                <th>Jenis Kelamin</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <!-- Link menuju biodata membawa parameter dummy -->
+                <td><a href="dataPeserta.html?nama=Andi+Susanto&jk=Laki-laki&agama=Islam&tempat_lahir=Bandung&tanggal_lahir=2002-05-12&alamat=Jl.+Merdeka+No.1&jurusan=Teknik+Informatika&minat=Programming">Andi Susanto</a></td>
+                <td>Laki-laki</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="dataPeserta.html?nama=Siti+Aminah&jk=Perempuan&agama=Islam&tempat_lahir=Jakarta&jurusan=Sistem+Informasi">Siti Aminah</a></td>
+                <td>Perempuan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="dataPeserta.html?nama=Budi+Santoso&jk=Laki-laki&agama=Kristen+Protestan&jurusan=Manajemen+Informatika">Budi Santoso</a></td>
+                <td>Laki-laki</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="dataPeserta.html?nama=Clara+Monica&jk=Perempuan&agama=Katolik&jurusan=Teknik+Informatika">Clara Monica</a></td>
+                <td>Perempuan</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="dataPeserta.html?nama=Rizal+Fahmi&jk=Laki-laki&agama=Islam&jurusan=Sistem+Informasi">Rizal Fahmi</a></td>
+                <td>Laki-laki</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="bootstrap.html">M Khairullah</a></td>
+                <td>Laki-laki</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

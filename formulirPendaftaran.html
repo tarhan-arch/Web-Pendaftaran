@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 15px; }
+        nav { background-color: #333; padding: 10px; border-radius: 5px; margin-bottom: 20px;}
+        nav a { color: white; text-decoration: none; margin-right: 15px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        fieldset { margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+        legend { font-weight: bold; }
+        .input-group { margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Sederhana -->
+    <nav>
+        <a href="formulirPendaftaran.html">Formulir Pendaftaran</a>
+        <a href="tabelPeserta.html">Tabel Peserta</a>
+    </nav>
+
+    <h2>Formulir Pendaftaran Peserta</h2>
+    
+    <!-- Form menuju ke dataPeserta.html -->
+    <form action="dataPeserta.html" method="GET">
+        
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <div class="input-group">
+                <label>Nama Lengkap:</label><br>
+                <input type="text" name="nama" required placeholder="Masukkan nama">
+            </div>
+
+            <div class="input-group">
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" name="jk" value="Laki-laki" required> Laki-laki
+                <input type="radio" name="jk" value="Perempuan" required> Perempuan
+            </div>
+
+            <div class="input-group">
+                <label>Agama:</label><br>
+                <select name="agama">
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen Protestan">Kristen Protestan</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Buddha">Buddha</option>
+                    <option value="Konghucu">Konghucu</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>Tempat Lahir:</label><br>
+                <input type="text" name="tempat_lahir">
+            </div>
+
+            <div class="input-group">
+                <label>Tanggal Lahir:</label><br>
+                <input type="date" name="tanggal_lahir">
+            </div>
+
+            <div class="input-group">
+                <label>Alamat:</label><br>
+                <textarea name="alamat" rows="3" cols="30"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pendidikan</legend>
+            <div class="input-group">
+                <label>SD:</label> <input type="text" name="sd_nama" placeholder="Nama SD">
+                <br>Tahun: <input type="number" name="sd_masuk" placeholder="Masuk" style="width: 70px;"> - <input type="number" name="sd_keluar" placeholder="Lulus" style="width: 70px;">
+            </div>
+            <div class="input-group">
+                <label>SMP:</label> <input type="text" name="smp_nama" placeholder="Nama SMP">
+                <br>Tahun: <input type="number" name="smp_masuk" placeholder="Masuk" style="width: 70px;"> - <input type="number" name="smp_keluar" placeholder="Lulus" style="width: 70px;">
+            </div>
+            <div class="input-group">
+                <label>SMA:</label> <input type="text" name="sma_nama" placeholder="Nama SMA">
+                <br>Tahun: <input type="number" name="sma_masuk" placeholder="Masuk" style="width: 70px;"> - <input type="number" name="sma_keluar" placeholder="Lulus" style="width: 70px;">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pelatihan</legend>
+            <div class="input-group">
+                <label>Minat dan Kompetensi (Pilih bisa >1):</label><br>
+                <input type="checkbox" name="minat" value="Web Design"> Web Design<br>
+                <input type="checkbox" name="minat" value="Programming"> Programming<br>
+                <input type="checkbox" name="minat" value="Networking"> Networking<br>
+                <input type="checkbox" name="minat" value="Database"> Database<br>
+            </div>
+
+            <div class="input-group">
+                <label>Pilih Jurusan:</label><br>
+                <select name="jurusan">
+                    <option value="Teknik Informatika">Teknik Informatika</option>
+                    <option value="Sistem Informasi">Sistem Informasi</option>
+                    <option value="Manajemen Informatika">Manajemen Informatika</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit" style="padding: 10px 20px; background-color: #28a745; color: white; border: none; border-radius: 5px;">Submit</button>
+        <button type="reset" style="padding: 10px 20px; background-color: #dc3545; color: white; border: none; border-radius: 5px;">Reset</button>
+    </form>
+
+</body>
+</html>
